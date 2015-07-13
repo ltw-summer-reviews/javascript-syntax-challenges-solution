@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Name judger</title>
+  <link href="css/name-judger.css" rel="stylesheet">
+</head>
+<body>
+
+  <form id="name-form" method="post">
+    <label for="name">Your name</label>
+    <input id="name">
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="short-name" hidden>Whoa, your name is really short, <strong class="name"></strong>.</p>
+  <p id="medium-name" hidden>That’s a pretty common name length, <strong class="name"></strong>.</p>
+  <p id="long-name" hidden>It’s amazing how long your name is, <strong class="name"></strong>.</p>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/name-judger.js"></script>
+</body>
+</html>

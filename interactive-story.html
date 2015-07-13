@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Interactive story</title>
+  <link href="css/interactive-story.css" rel="stylesheet">
+</head>
+<body>
+
+  <form id="question-name" method="post">
+    <label for="name">Your name</label>
+    <input id="name">
+    <button type="submit">Go!</button>
+  </form>
+
+  <form id="question-story" method="post" hidden>
+    <fieldset>
+      <legend>Once upon a time there was a wonderful person, named <strong class="name"></strong>, who set out on a quest to…</legend>
+      <input type="radio" id="answer-story-1" value="a" name="answer-story">
+      <label for="answer-story-1">A. find an ancient lost treasure.</label>
+      <input type="radio" id="answer-story-2" value="b" name="answer-story">
+      <label for="answer-story-2">B. discover an advanced alien race.</label>
+    </fieldset>
+    <button type="submit">Start the adventure!</button>
+  </form>
+
+  <!-- Story 1 ############################################ -->
+
+  <form id="story-1" method="post" hidden>
+    <fieldset>
+      <legend>Knowing it was hidden in a small coat pocket, <strong class="name"></strong> pulled out a treasure map and set off to find the “x”. Coming to a rickety, rope bridge, <strong class="name"></strong> had to decide to go…</legend>
+      <input type="radio" id="answer-1-a" value="a" name="answer-1">
+      <label for="answer-1-a">1. over the bridge.</label>
+      <input type="radio" id="answer-1-b" value="b" name="answer-1">
+      <label for="answer-1-b">2. under the bridge.</label>
+      <input type="radio" id="answer-1-c" value="c" name="answer-1">
+      <label for="answer-1-c">3. back home.</label>
+    </fieldset>
+    <button type="submit">Continue!</button>
+  </form>
+
+  <div id="story-1-end" hidden>
+    <p id="story-1-end-a" hidden><strong class="name"></strong> crossed the bridge and found the wonderful, ancient treasure!</p>
+    <p id="story-1-end-b" hidden><strong class="name"></strong> died a horrible, gory death by crocodiles under the bridge.</p>
+    <p id="story-1-end-c" hidden><strong class="name"></strong> went home a scared and disappointed fool.</p>
+    <em>The end.</em>
+  </div>
+
+  <!-- Story 2 ############################################ -->
+
+  <form id="story-2" method="post" hidden>
+    <fieldset>
+      <legend>Uncovering a one-person rocket ship hidden under a pile of leaves, <strong class="name"></strong> ignited the switch and sped off towards…</legend>
+      <input type="radio" id="answer-2-a" value="a" name="answer-2">
+      <label for="answer-2-a">1. Venus.</label>
+      <input type="radio" id="answer-2-b" value="b" name="answer-2">
+      <label for="answer-2-b">2. Mars.</label>
+      <input type="radio" id="answer-2-c" value="c" name="answer-2">
+      <label for="answer-2-c">3. Neptune.</label>
+    </fieldset>
+    <button type="submit">Continue!</button>
+  </form>
+
+  <div id="story-2-end" hidden>
+    <p id="story-2-end-a" hidden><strong class="name"></strong> was thrown violently around the storms of Venus, crashing into a fiery volcano of death.</p>
+    <p id="story-2-end-b" hidden><strong class="name"></strong> landed on the planet Mars to a great fanfare and was treated like royalty till the end of days.</p>
+    <p id="story-2-end-c" hidden><strong class="name"></strong>’s rocket sputtered down to the frozen wasteland and found nothing.</p>
+    <em>The end.</em>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/interactive-story.js"></script>
+</body>
+</html>

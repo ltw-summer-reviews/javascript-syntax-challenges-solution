@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Phrasal template word game</title>
+  <link href="css/word-game.css" rel="stylesheet">
+</head>
+<body>
+
+  <form id="words" method="post">
+    <fieldset>
+      <legend>Fill in random words to generate a story.</legend>
+      <ol>
+        <li>
+          <label for="word-1-input">Color</label>
+          <input id="word-1-input" data-answer="1">
+        </li>
+        <li>
+          <label for="word-2-input">Superlative (ending in “est”)</label>
+          <input id="word-2-input" data-answer="2">
+        </li>
+        <li>
+          <label for="word-3-input">Adjective</label>
+          <input id="word-3-input" data-answer="3">
+        </li>
+        <li>
+          <label for="word-4-input">Body part (plural)</label>
+          <input id="word-4-input" data-answer="4">
+        </li>
+        <li>
+          <label for="word-5-input">Body part</label>
+          <input id="word-5-input" data-answer="5">
+        </li>
+        <li>
+          <label for="word-6-input">Noun</label>
+          <input id="word-6-input" data-answer="6">
+        </li>
+        <li>
+          <label for="word-7-input">Food (plural)</label>
+          <input id="word-7-input" data-answer="7">
+        </li>
+        <li>
+          <label for="word-8-input">Adjective</label>
+          <input id="word-8-input" data-answer="8">
+        </li>
+        <li>
+          <label for="word-9-input">Adjective</label>
+          <input id="word-9-input" data-answer="9">
+        </li>
+        <li>
+          <label for="word-10-input"> Adjective</label>
+          <input id="word-10-input" data-answer="10">
+        </li>
+      </ol>
+    </fieldset>
+    <button type="submit">Create story</button>
+  </form>
+
+  <div id="story" hidden>
+    <p>The <strong id="word-1"></strong> dragon is the <strong id="word-2"></strong> dragon of all.</p>
+    <p>It has <strong id="word-3"></strong> <strong id="word-4"></strong>, and a <strong id="word-5"></strong> shaped like a <strong id="word-6"></strong>.</p>
+    <p>It loves to eat <strong id="word-7"></strong>, although it will feast on nearly anything.</p>
+    <p>It is <strong id="word-8"></strong> and <strong id="word-9"></strong>.</p>
+    <p>You must be <strong id="word-10"></strong> around it, or you may end up as it’s meal!</p>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/word-game.js"></script>
+</body>
+</html>
