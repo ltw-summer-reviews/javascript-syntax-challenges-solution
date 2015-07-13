@@ -8,12 +8,12 @@ The solution to the Javascript syntax challenges review project.
 
 ## Test the solutions
 
-1. [Letter looper]()
-2. [Letter looper triangle]()
-3. [Hello, Person]()
-4. [Name judger]()
-5. [Phrasal template word game]()
-6. [Interactive story]()
+1. [Letter looper](https://acgd-summer-reviews.github.io/javascript-syntax-challenges-solution/letter-looper.html)
+2. [Letter looper triangle](https://acgd-summer-reviews.github.io/javascript-syntax-challenges-solution/letter-looper-triangle.html)
+3. [Hello, Person](https://acgd-summer-reviews.github.io/javascript-syntax-challenges-solution/hello-person.html)
+4. [Name judger](https://acgd-summer-reviews.github.io/javascript-syntax-challenges-solution/name-judger.html)
+5. [Phrasal template word game](https://acgd-summer-reviews.github.io/javascript-syntax-challenges-solution/word-game.html)
+6. [Interactive story](https://acgd-summer-reviews.github.io/javascript-syntax-challenges-solution/interactive-story.html)
 
 ---
 
